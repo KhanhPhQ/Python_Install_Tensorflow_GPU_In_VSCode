@@ -37,22 +37,68 @@ pip install --upgrade pip
 
 # Hướng dẫn cài đặt
 **1. Yêu cầu hệ thống**
-Windows 7 trở lên (64-bit).
+
+> Windows 7 trở lên (64-bit).
 
 **2. Cài đặt Microsoft Visual C++ Redistributable**
-- [Tải xuống Microsoft Visual C++](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
-- Kéo xuống, chọn để tải về và cài đặt.
+
+> [Tải xuống Microsoft Visual C++](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
+> Kéo xuống, chọn để tải về và cài đặt.
 
 ![image](https://github.com/user-attachments/assets/bd878fd7-893a-457a-a716-5ed3f14f74c9)
 
-- Đảm bảo [đường dẫn dài được bật](https://superuser.com/questions/1119883/windows-10-enable-ntfs-long-paths-policy-option-missing) trên Windows.
-  + Nhấn Windows + R > Gõ "gpedit.msc"
+> Đảm bảo [đường dẫn dài được bật](https://superuser.com/questions/1119883/windows-10-enable-ntfs-long-paths-policy-option-missing) trên Windows.
+- Nhấn Windows + R > Gõ "gpedit.msc"
+
 ![image](https://github.com/user-attachments/assets/cbdffe7d-ebc6-461e-a383-dccdddbb6261)
 
-  + Chọn theo đường dẫn **Computer Configuration** > **Administrative Templates** > **System** > **Filesystem** (Tùy máy sẽ nằm trong **NTFS**)
+- Chọn theo đường dẫn **Computer Configuration** > **Administrative Templates** > **System** > **Filesystem** (Tùy máy sẽ nằm trong **NTFS**)
 
 ![image](https://github.com/user-attachments/assets/69dbb318-dc39-4cf0-9db5-668ca2cfb204)
 
-  + Chọn "**Enable Win32 long paths**" và **Enabled**.
+ - Chọn "**Enable Win32 long paths**" và **Enabled**.
 
 **3. Cài đặt Miniconda**
+> [Tải xuống Windows Miniconda](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe) và cài đặt.
+
+**4. Tạo môi trường ảo**
+> Liên kết đến [Cài đặt môi trường ảo trên VSCode.](https://github.com/KhanhPhQ/Install_Virtual_Environment_On_VSCode)
+
+**5. Thiết lập GPU**
+> Mở Terminal trong VSCode với môi trường ảo, chạy lệnh.
+```bash
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+```
+
+![image](https://github.com/user-attachments/assets/7c2978fa-04d9-4e0c-a7e5-9a55fbba5695)
+
+> Sau khi quá trình trên chạy xong, chạy tiếp các lệnh bên dưới.
+```bash
+pip install "numpy<2"
+pip install "tensorflow<2.11"
+pip install tensorflow-datasets
+pip install matplotlib
+```
+
+**6. Kiểm tra nhận diện GPU trên Windows**
+Tạo 1 File Python đuôi ".py" và nhập mã bên dưới để kiểm tra.
+```bash
+import tensorflow as tf
+
+print("TensorFlow version:", tf.__version__)
+gpus = tf.config.list_physical_devices('GPU')
+if gpus:
+    print("Số GPU khả dụng:", len(gpus))
+    for gpu in gpus:
+        # Lấy thông tin chi tiết của GPU
+        details = tf.config.experimental.get_device_details(gpu)
+        # Nếu có thông tin tên, in ra; nếu không thì in tên mặc định của đối tượng GPU
+        gpu_name = details.get('device_name', gpu.name)
+        print("Tên GPU:", gpu_name)
+else:
+    print("Không tìm thấy GPU.")
+```
+
+![image](https://github.com/user-attachments/assets/f3d7b020-5c5d-400b-aac6-08af0ebba3ba)
+
+**=> Thành công, nhận diện GPU.**
