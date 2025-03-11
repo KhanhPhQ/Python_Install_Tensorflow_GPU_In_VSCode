@@ -43,6 +43,7 @@ pip install --upgrade pip
 **2. Cài đặt Microsoft Visual C++ Redistributable**
 
 > [Tải xuống Microsoft Visual C++](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
+
 > Kéo xuống, chọn để tải về và cài đặt.
 
 ![image](https://github.com/user-attachments/assets/bd878fd7-893a-457a-a716-5ed3f14f74c9)
