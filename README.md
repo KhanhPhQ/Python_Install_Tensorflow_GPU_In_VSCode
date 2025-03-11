@@ -2,7 +2,7 @@
 Cài đặt Tensorflow GPU (**Windows Gốc - Windows Native**) trên VSCode.
 
 # Thông tin chung
-Cấu hình Laptop:
+Cấu hình Laptop (của tôi):
 - Dell Precision 5530
 - Windows: 11 Pro 24H2
 - Processor: Intel(R) Core(TM) i9-8950HK CPU @ 2.90GHz   2.90 GHz
@@ -41,7 +41,7 @@ Windows 7 trở lên (64-bit).
 
 **2. Cài đặt Microsoft Visual C++ Redistributable**
 - [Tải xuống Microsoft Visual C++](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
-- Kéo xuống và chọn để tải về
+- Kéo xuống, chọn để tải về và cài đặt.
 
 ![image](https://github.com/user-attachments/assets/bd878fd7-893a-457a-a716-5ed3f14f74c9)
 
