@@ -103,3 +103,6 @@ else:
 ![image](https://github.com/user-attachments/assets/f3d7b020-5c5d-400b-aac6-08af0ebba3ba)
 
 **=> Thành công, nhận diện GPU.**
+
+# Nguồn tham khảo:
+https://www.youtube.com/watch?v=4JoaS11qTQg&t=2281s
