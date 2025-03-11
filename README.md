@@ -66,14 +66,14 @@ python.exe -m pip install --upgrade pip
 > Liên kết đến [Cài đặt môi trường ảo trên VSCode.](https://github.com/KhanhPhQ/Install_Virtual_Environment_On_VSCode)
 
 **5. Thiết lập GPU**
-> Mở Terminal trong VSCode với môi trường ảo, chạy lệnh.
+- Mở Terminal trong VSCode với môi trường ảo, chạy lệnh.
 ```bash
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
 ```
 
 ![image](https://github.com/user-attachments/assets/7c2978fa-04d9-4e0c-a7e5-9a55fbba5695)
 
-> Sau khi quá trình trên chạy xong, chạy tiếp các lệnh bên dưới.
+- Sau khi quá trình trên chạy xong, chạy tiếp các lệnh bên dưới.
 ```bash
 pip install "numpy<2"
 pip install "tensorflow<2.11"
@@ -82,7 +82,7 @@ pip install matplotlib
 ```
 
 **6. Kiểm tra nhận diện GPU trên Windows**
-Tạo 1 File Python đuôi ".py" và nhập mã bên dưới để kiểm tra.
+- Tạo 1 File Python đuôi ".py" và nhập mã bên dưới để kiểm tra.
 ```bash
 import tensorflow as tf
 
