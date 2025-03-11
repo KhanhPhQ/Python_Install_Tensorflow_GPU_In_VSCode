@@ -20,20 +20,40 @@ Trang chủ Tensorflow: _**https://www.tensorflow.org/**_
 
 > **Yêu cầu phần mềm**
 - **Python 3.10**
+
+![image](https://github.com/user-attachments/assets/78b3b55a-240b-419b-9bd0-1265ca38ba9f)
+
 - **pip**:
   + **Phiên bản 19.0 trở lên** cho Windows.
+```bash
+pip install --upgrade pip
+```
+
 - Windows Native Yêu cầu **Microsoft Visual C++ Redistributable cho Visual Studio 2015, 2017 và 2019**.
 - Phần mềm NVIDIA® sau đây chỉ được yêu cầu để hỗ trợ GPU.
   + Trình điều khiển GPU **NVIDIA® >= 528,33** cho WSL trên Windows.
+ 
+![image](https://github.com/user-attachments/assets/784a7c01-7bb2-4426-828e-7cb9fdfb7251)
 
 # Hướng dẫn cài đặt
 **1. Yêu cầu hệ thống**
-Windows 7 trở lên (64-bit)
+Windows 7 trở lên (64-bit).
+
 **2. Cài đặt Microsoft Visual C++ Redistributable**
 - [Tải xuống Microsoft Visual C++](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 - Kéo xuống và chọn để tải về
 
 ![image](https://github.com/user-attachments/assets/bd878fd7-893a-457a-a716-5ed3f14f74c9)
 
-* Đảm bảo [đường dẫn dài được bật](https://superuser.com/questions/1119883/windows-10-enable-ntfs-long-paths-policy-option-missing) trên Windows.
-3. Cài đặt Miniconda
+- Đảm bảo [đường dẫn dài được bật](https://superuser.com/questions/1119883/windows-10-enable-ntfs-long-paths-policy-option-missing) trên Windows.
+  + Nhấn Windows + R > Gõ "gpedit.msc"
+
+![image](https://github.com/user-attachments/assets/cbdffe7d-ebc6-461e-a383-dccdddbb6261)
+
+  + Chọn theo đường dẫn **Computer Configuration** > **Administrative Templates** > **System** > **Filesystem** (Tùy máy sẽ nằm trong **NTFS**)
+
+![image](https://github.com/user-attachments/assets/69dbb318-dc39-4cf0-9db5-668ca2cfb204)
+
+  + Chọn "**Enable Win32 long paths**" và **Enabled**.
+
+**3. Cài đặt Miniconda**
