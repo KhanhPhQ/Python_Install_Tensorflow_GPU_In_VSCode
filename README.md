@@ -19,11 +19,21 @@ Trang chủ Tensorflow: _**https://www.tensorflow.org/**_
 - Windows Native - Windows 7 trở lên (64-bit) (không hỗ trợ GPU sau TF 2.10)
 
 > **Yêu cầu phần mềm**
-- Python 3.9 - 3.12
-- pip:
-  + Phiên bản 19.0 trở lên cho Linux và Windows.
-  + Phiên bản 20.3 trở lên cho macOS.
-- Windows Native Yêu cầu [Microsoft Visual C++ Redistributable cho Visual Studio 2015, 2017 và 2019](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
-- Phần mềm NVIDIA® sau đây chỉ được yêu cầu để hỗ trợ GPU. Trình điều khiển GPU NVIDIA®
-  + '>= 525.60.13 cho Linux
-  + '>= 528,33 cho WSL trên Windows
+- **Python 3.10**
+- **pip**:
+  + **Phiên bản 19.0 trở lên** cho Windows.
+- Windows Native Yêu cầu **Microsoft Visual C++ Redistributable cho Visual Studio 2015, 2017 và 2019**.
+- Phần mềm NVIDIA® sau đây chỉ được yêu cầu để hỗ trợ GPU.
+  + Trình điều khiển GPU **NVIDIA® >= 528,33** cho WSL trên Windows.
+
+# Hướng dẫn cài đặt
+**1. Yêu cầu hệ thống**
+Windows 7 trở lên (64-bit)
+**2. Cài đặt Microsoft Visual C++ Redistributable**
+- [Tải xuống Microsoft Visual C++](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
+- Kéo xuống và chọn để tải về
+
+![image](https://github.com/user-attachments/assets/bd878fd7-893a-457a-a716-5ed3f14f74c9)
+
+* Đảm bảo [đường dẫn dài được bật](https://superuser.com/questions/1119883/windows-10-enable-ntfs-long-paths-policy-option-missing) trên Windows.
+3. Cài đặt Miniconda
