@@ -47,7 +47,6 @@ Windows 7 trở lên (64-bit).
 
 - Đảm bảo [đường dẫn dài được bật](https://superuser.com/questions/1119883/windows-10-enable-ntfs-long-paths-policy-option-missing) trên Windows.
   + Nhấn Windows + R > Gõ "gpedit.msc"
-
 ![image](https://github.com/user-attachments/assets/cbdffe7d-ebc6-461e-a383-dccdddbb6261)
 
   + Chọn theo đường dẫn **Computer Configuration** > **Administrative Templates** > **System** > **Filesystem** (Tùy máy sẽ nằm trong **NTFS**)
