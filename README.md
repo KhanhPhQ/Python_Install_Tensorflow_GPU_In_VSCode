@@ -26,7 +26,7 @@ Trang chủ Tensorflow: _**https://www.tensorflow.org/**_
 - **pip**:
   + **Phiên bản 19.0 trở lên** cho Windows.
 ```bash
-pip install --upgrade pip
+python.exe -m pip install --upgrade pip
 ```
 
 - Windows Native Yêu cầu **Microsoft Visual C++ Redistributable cho Visual Studio 2015, 2017 và 2019**.
