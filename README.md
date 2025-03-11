@@ -25,5 +25,5 @@ Trang chủ Tensorflow: _**https://www.tensorflow.org/**_
   + Phiên bản 20.3 trở lên cho macOS.
 - Windows Native Yêu cầu [Microsoft Visual C++ Redistributable cho Visual Studio 2015, 2017 và 2019](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads)
 - Phần mềm NVIDIA® sau đây chỉ được yêu cầu để hỗ trợ GPU. Trình điều khiển GPU NVIDIA®
-  + >= 525.60.13 cho Linux
-  + >= 528,33 cho WSL trên Windows
+  + '>= 525.60.13 cho Linux
+  + '>= 528,33 cho WSL trên Windows
