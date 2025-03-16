@@ -1,5 +1,5 @@
-# Python_Install_Tensorflow_GPU_On_VSCode
-Cài đặt Tensorflow GPU (**Windows Gốc - Windows Native**) trên VSCode.
+# [Python] Cài Đặt Tensorflow GPU Trong VSCode
+Cài đặt Tensorflow GPU (**Windows Gốc - Windows Native**) trong VSCode.
 
 # Thông tin chung
 Cấu hình Laptop (của tôi):
